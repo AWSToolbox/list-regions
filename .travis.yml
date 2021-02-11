@@ -1,0 +1,144 @@
+matrix:
+  include:
+  - language: python
+    name: Compatibility Test (Python 3.6 + Bandit)
+    python: 3.6
+    before_install:
+    - git clone https://github.com/TravisToolbox/bandit.git
+    install:
+    - "./bandit/install.sh"
+    script:
+    - "./bandit/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.6 + Pur)
+    python: 3.6
+    before_install:
+    - git clone https://github.com/TravisToolbox/pur.git
+    install:
+    - "./pur/install.sh"
+    script:
+    - "./pur/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.6 + Pycodestyle)
+    python: 3.6
+    before_install:
+    - git clone https://github.com/TravisToolbox/pycodestyle.git
+    install:
+    - "./pycodestyle/install.sh"
+    script:
+    - "./pycodestyle/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.7 + Bandit)
+    python: 3.7
+    before_install:
+    - git clone https://github.com/TravisToolbox/bandit.git
+    install:
+    - "./bandit/install.sh"
+    script:
+    - "./bandit/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.7 + Pur)
+    python: 3.7
+    before_install:
+    - git clone https://github.com/TravisToolbox/pur.git
+    install:
+    - "./pur/install.sh"
+    script:
+    - "./pur/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.7 + Pycodestyle)
+    python: 3.7
+    before_install:
+    - git clone https://github.com/TravisToolbox/pycodestyle.git
+    install:
+    - "./pycodestyle/install.sh"
+    script:
+    - "./pycodestyle/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.8 + Bandit)
+    python: 3.8
+    before_install:
+    - git clone https://github.com/TravisToolbox/bandit.git
+    install:
+    - "./bandit/install.sh"
+    script:
+    - "./bandit/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.8 + Pur)
+    python: 3.8
+    before_install:
+    - git clone https://github.com/TravisToolbox/pur.git
+    install:
+    - "./pur/install.sh"
+    script:
+    - "./pur/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.8 + Pycodestyle)
+    python: 3.8
+    before_install:
+    - git clone https://github.com/TravisToolbox/pycodestyle.git
+    install:
+    - "./pycodestyle/install.sh"
+    script:
+    - "./pycodestyle/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.9 + Bandit)
+    python: 3.9
+    before_install:
+    - git clone https://github.com/TravisToolbox/bandit.git
+    install:
+    - "./bandit/install.sh"
+    script:
+    - "./bandit/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.9 + Pur)
+    python: 3.9
+    before_install:
+    - git clone https://github.com/TravisToolbox/pur.git
+    install:
+    - "./pur/install.sh"
+    script:
+    - "./pur/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.9 + Pycodestyle)
+    python: 3.9
+    before_install:
+    - git clone https://github.com/TravisToolbox/pycodestyle.git
+    install:
+    - "./pycodestyle/install.sh"
+    script:
+    - "./pycodestyle/scan.sh"
+  - language: ruby
+    name: YAML Linting (rvm 2.7)
+    rvm: 2.7
+    before_install:
+    - git clone https://github.com/TravisToolbox/yaml-lint
+    install:
+    - "./yaml-lint/install.sh"
+    script:
+    - "./yaml-lint/scan.sh"
+  - language: bash
+    name: Shellcheck (Bash)
+    os: linux
+    arch: arm64-graviton2
+    before_install:
+    - git clone https://github.com/TravisToolbox/shellcheck
+    install:
+    - "./shellcheck/install.sh"
+    script:
+    - "./shellcheck/scan.sh"
+  - language: ruby
+    name: Link Checking (rvm 2.7)
+    rvm: 2.7
+    env:
+    - WHITELIST="https://img.shields.io"
+    - EXCLUDE_FILES="CHANGELOG.md"
+    before_install:
+    - git clone https://github.com/TravisToolbox/awesomebot
+    install:
+    - "./awesomebot/install.sh"
+    script:
+    - "./awesomebot/scan.sh"
+notifications:
+  email: false
+  slack:
