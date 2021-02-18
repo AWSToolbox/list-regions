@@ -5,9 +5,9 @@ All notable changes to this project will be documented in this file.
 
 This changelog was automatically generated using [Caretaker](https://github.com/DevelopersToolbox/caretaker) by [Wolf Software](https://github.com/WolfSoftware)
 
-### [v0.1.0](https://github.com/AWSToolbox/list-regions/releases/v0.1.0)
+### [Unreleased](https://github.com/AWSToolbox/list-regions/compare/v0.1.0...HEAD)
 
-> Released on February, 11th 2021
+- Add a new travis job to run github-linguist for information only [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
 
-- The initial commit [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+- The initial commit [`[43a8944]`](https://github.com/AWSToolbox/list-regions/commit/43a8944757114bdd296de47189a51806a2ce5c48)
 
