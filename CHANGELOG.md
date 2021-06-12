@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-regions/compare/v0.1.1...HEAD)
 
-- Update requirements [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+- Update travis slack integration due to new slack organisation [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+
+- Update requirements [`[ee5ae1e]`](https://github.com/AWSToolbox/list-regions/commit/ee5ae1e1195985a14a6eb01e9c6c3bc643bac463)
 
 - Fix travis -> slack integration [`[b134f3c]`](https://github.com/AWSToolbox/list-regions/commit/b134f3c1800d9dac72dede4e20f21890b049a5ba)
 
