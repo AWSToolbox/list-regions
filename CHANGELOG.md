@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-regions/compare/v0.1.1...HEAD)
 
-- Fix pur issues from travis [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+- rebrand [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+
+- Fix pur issues from travis [`[289ee58]`](https://github.com/AWSToolbox/list-regions/commit/289ee58bb16508e12f4fd4bc164bf1c1010df610)
 
 - Update travis slack integration due to new slack organisation [`[5270a0a]`](https://github.com/AWSToolbox/list-regions/commit/5270a0af08dd0d0acb759bfeda75464fcafbba92)
 
