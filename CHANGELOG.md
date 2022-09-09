@@ -9,6 +9,8 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - Workflows [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
 
+- Workflows [`[516e0ad]`](https://github.com/AWSToolbox/list-regions/commit/516e0adf94bfa354a2ce1397c658065497d85782)
+
 - Bump prettytable from 2.2.1 to 3.4.1 [`[#3]`](https://github.com/AWSToolbox/list-regions/pull/3)
 
 - Bump requests from 2.26.0 to 2.28.1 [`[#4]`](https://github.com/AWSToolbox/list-regions/pull/4)
