@@ -1,4 +1,4 @@
-name: pipeline
+name: CICD Pipeline
 on: [push, pull_request]
 
 jobs:
@@ -6,92 +6,97 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python: [ '3.6', '3.7', '3.8', '3.9' ]
+        python: [ '3.7', '3.8', '3.9', '3.10' ]
     name: Bandit Test on Python ${{ matrix.python }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python }}
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python }}
       - name: Run Bandit
         run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/bandit/master/pipeline.sh)
-  pur:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python: [ '3.6', '3.7', '3.8', '3.9' ]
-    name: Pur Test on Python ${{ matrix.python }}
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set up Python ${{ matrix.python }}
-        uses: actions/setup-python@v2
-        with:
-          python-version: ${{ matrix.python }}
-      - name: Run Pur
-        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/pur/master/pipeline.sh)
+#  pur:
+#    runs-on: ubuntu-latest
+#    strategy:
+#      matrix:
+#        python: [ '3.7', '3.8', '3.9', '3.10' ]
+#    name: Pur Test on Python ${{ matrix.python }}
+#    steps:
+#      - uses: actions/checkout@v3
+#      - name: Set up Python ${{ matrix.python }}
+#        uses: actions/setup-python@v4
+#        with:
+#          python-version: ${{ matrix.python }}
+#      - name: Run Pur
+#        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/pur/master/pipeline.sh)
   pycodestyle:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python: [ '3.6', '3.7', '3.8', '3.9' ]
+        python: [ '3.7', '3.8', '3.9', '3.10' ]
     name: Pycodestyle Test on Python ${{ matrix.python }}
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python }}
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python }}
       - name: Run Pycodestyle
         run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/pycodestyle/master/pipeline.sh)
+
   awesomebot:
     name: Awesomebot
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up Ruby 3.0
+      - uses: actions/checkout@v3
+      - name: Set up Ruby 3.1
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0
+          ruby-version: 3.1
       - name: Run Awesomebot
         env:
           FLAGS: "default"
           EXCLUDE_FILES: "CHANGELOG.md"
           WHITELIST: "https://img.shields.io"
         run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/awesomebot/master/pipeline.sh)
+
   shellcheck:
     name: ShellCheck
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Run Shellcheck
         run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/shellcheck/master/pipeline.sh)
+
   yaml-lint:
     name: YAML Lint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up Ruby 3.0
+      - uses: actions/checkout@v3
+      - name: Set up Ruby 3.1
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0
+          ruby-version: 3.1
       - name: Run YAML-Lint
         run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/yaml-lint/master/pipeline.sh)
+
   slack-workflow-status:
-    if: always()
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
     name: Slack Post Workflow Notification
     needs:
       - bandit
-      - pur
+#      - pur
       - pycodestyle
       - awesomebot
       - shellcheck
       - yaml-lint
     runs-on: ubuntu-latest
     steps:
-      - name: Slack Post Workflow Notification
-        uses: Gamesight/slack-workflow-status@master
+      - name: Slack Workflow Notifications
+        uses: Gamesight/slack-workflow-status@v1.1.0
         with:
-          include_jobs: true
-          repo_token: ${{secrets.GITHUB_TOKEN}}
-          slack_webhook_url: ${{secrets.SLACK_WEBHOOK_URL}}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          include_jobs: on-failure
+          include_commit_message: true

@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-regions/compare/v0.1.1...HEAD)
 
-- rebrand [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+- Dependaot and workflows [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+
+- rebrand [`[29e8cb0]`](https://github.com/AWSToolbox/list-regions/commit/29e8cb02ce0b72254387e4741db717dcc46705ae)
 
 - Fix pur issues from travis [`[289ee58]`](https://github.com/AWSToolbox/list-regions/commit/289ee58bb16508e12f4fd4bc164bf1c1010df610)
 
