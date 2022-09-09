@@ -7,7 +7,68 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-regions/compare/v0.1.1...HEAD)
 
-- Dependaot and workflows [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+- Workflows [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+
+- Bump prettytable from 2.2.1 to 3.4.1 [`[#3]`](https://github.com/AWSToolbox/list-regions/pull/3)
+
+- Bump requests from 2.26.0 to 2.28.1 [`[#4]`](https://github.com/AWSToolbox/list-regions/pull/4)
+
+Bumps [requests](https://github.com/psf/requests) from 2.26.0 to 2.28.1.
+- [Release notes](https://github.com/psf/requests/releases)
+- [Changelog](https://github.com/psf/requests/blob/main/HISTORY.md)
+- [Commits](https://github.com/psf/requests/compare/v2.26.0...v2.28.1)
+
+---
+updated-dependencies:
+- dependency-name: requests
+ dependency-type: direct:production
+ update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump botocore from 1.21.59 to 1.27.70 [`[#2]`](https://github.com/AWSToolbox/list-regions/pull/2)
+
+Bumps [botocore](https://github.com/boto/botocore) from 1.21.59 to 1.27.70.
+- [Release notes](https://github.com/boto/botocore/releases)
+- [Changelog](https://github.com/boto/botocore/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/botocore/compare/1.21.59...1.27.70)
+
+---
+updated-dependencies:
+- dependency-name: botocore
+ dependency-type: direct:production
+ update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump boto3 from 1.18.59 to 1.24.70 [`[#1]`](https://github.com/AWSToolbox/list-regions/pull/1)
+
+Bumps [boto3](https://github.com/boto/boto3) from 1.18.59 to 1.24.70.
+- [Release notes](https://github.com/boto/boto3/releases)
+- [Changelog](https://github.com/boto/boto3/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/boto3/compare/1.18.59...1.24.70)
+
+---
+updated-dependencies:
+- dependency-name: boto3
+ dependency-type: direct:production
+ update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Dependaot and workflows [`[3c92faa]`](https://github.com/AWSToolbox/list-regions/commit/3c92faaca7f3a05fbdd5a138adb62d030a7f9bf9)
 
 - rebrand [`[29e8cb0]`](https://github.com/AWSToolbox/list-regions/commit/29e8cb02ce0b72254387e4741db717dcc46705ae)
 
