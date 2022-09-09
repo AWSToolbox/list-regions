@@ -9,6 +9,8 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - Workflows [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
 
+- Workflows [`[0451072]`](https://github.com/AWSToolbox/list-regions/commit/0451072e0c13f07262e59fafb14a58400d52aa85)
+
 - Workflows [`[f942eac]`](https://github.com/AWSToolbox/list-regions/commit/f942eacfa3c14b0312858ad3713657d10545cac6)
 
 - Workflows [`[516e0ad]`](https://github.com/AWSToolbox/list-regions/commit/516e0adf94bfa354a2ce1397c658065497d85782)
