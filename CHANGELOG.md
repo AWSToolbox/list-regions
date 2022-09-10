@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-regions/compare/v0.1.1...HEAD)
 
-- Fix codeql errors [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+- Add greetings [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+
+- Fix codeql errors [`[f89282f]`](https://github.com/AWSToolbox/list-regions/commit/f89282fa0715162db131b30bdf5eca732c43d9d2)
 
 - Fix build link [`[0e02be2]`](https://github.com/AWSToolbox/list-regions/commit/0e02be2d2b92248d8a979f9f3c4fc77fb2629e10)
 
