@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-regions/compare/v0.1.1...HEAD)
 
-- Workflows [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+- Fix build link [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+
+- Workflows [`[e41c522]`](https://github.com/AWSToolbox/list-regions/commit/e41c5228c9d20820f1df2e5218e72a0ad3c1338d)
 
 - Create codeql-analysis.yml [`[1614d42]`](https://github.com/AWSToolbox/list-regions/commit/1614d42fdc2c407494ef684e68b0a055c4e0b4d2)
 
