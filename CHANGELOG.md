@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-regions/compare/v0.1.1...HEAD)
 
-- Fix build link [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+- Fix codeql errors [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+
+- Fix build link [`[0e02be2]`](https://github.com/AWSToolbox/list-regions/commit/0e02be2d2b92248d8a979f9f3c4fc77fb2629e10)
 
 - Fix build link [`[94b08a7]`](https://github.com/AWSToolbox/list-regions/commit/94b08a77a76463bb66ab7610f943de15aeaca2da)
 
