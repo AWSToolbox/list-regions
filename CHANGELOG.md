@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-regions/compare/v0.1.1...HEAD)
 
-- Add greetings [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+- Added pylint [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+
+- Add greetings [`[1ffc16d]`](https://github.com/AWSToolbox/list-regions/commit/1ffc16daeb42e79627a4ea6e569ad4149245a555)
 
 - Fix codeql errors [`[f89282f]`](https://github.com/AWSToolbox/list-regions/commit/f89282fa0715162db131b30bdf5eca732c43d9d2)
 

@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# pylint: disable=C0103
 
 """
 This script will query the AWS API using boto3 and provide a list (table) of all regions and your current opt in status
@@ -10,12 +11,13 @@ Example Usage:
 
 from __future__ import print_function
 
-import boto3
 import sys
+import boto3
 
 from botocore.exceptions import ClientError
 from prettytable import PrettyTable
 
+# pylint: disable=C0103
 unknown_string = 'unknown'
 country_mapping = {
                        'af-south-1': 'Africa (Cape Town)',
@@ -41,7 +43,7 @@ country_mapping = {
                   }
 
 
-def main(cmdline=None) -> None:
+def main(_cmdline=None) -> None:
 
     """
     The main function. This takes the command line arguments provided and parse them.
