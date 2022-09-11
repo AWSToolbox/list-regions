@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-regions/compare/v0.1.1...HEAD)
 
-- Added pylint [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+- Made list of regions dynamic [`[head]`](https://github.com/AWSToolbox/list-regions/commit/)
+
+- Added pylint [`[4c7b3f3]`](https://github.com/AWSToolbox/list-regions/commit/4c7b3f3d62ad3ca326b566826afaad94293fe2ee)
 
 - Added pylint [`[98c3717]`](https://github.com/AWSToolbox/list-regions/commit/98c3717878841d78cdeb561d70db1494a6686c8d)
 
