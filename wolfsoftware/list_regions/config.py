@@ -26,6 +26,5 @@ def create_configuration_from_arguments(args: Namespace) -> SimpleNamespace:
     config: SimpleNamespace = SimpleNamespace()
 
     config.profile = args.profile
-    config.threads = args.threads
 
     return config
