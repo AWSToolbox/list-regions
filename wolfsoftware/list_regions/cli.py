@@ -7,7 +7,6 @@ the config module to create configurations from the parsed arguments.
 """
 
 import argparse
-import os
 import sys
 
 from types import SimpleNamespace
@@ -44,7 +43,6 @@ def setup_arg_parser() -> argparse.ArgumentParser:
     flags.add_argument('-V', '--version', action="version", version=VERSION_STRING, help="Show program's version number and exit.")
 
     optional.add_argument("-p", "--profile", type=str, help="AWS profile name from ~/.aws/credentials")
-    optional.add_argument("-t", "--threads", type=int, help="The number of threads to use", default=os.cpu_count())
 
     return parser
 

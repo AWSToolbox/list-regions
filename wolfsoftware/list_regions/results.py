@@ -39,6 +39,6 @@ def display_results(results: List[Dict[str, Any]]) -> None:
     """
     table = PrettyTable(field_names=['Region Name', 'Location', 'Status'])
     for parts in results:
-        table.add_row([parts['RegionName'], parts['Location'], parts['STATUS']])
+        table.add_row([parts['RegionName'], parts['GeographicalLocation'], parts['OptInStatus']])
     table.sortby = 'Region Name'
     print(table)
