@@ -1,4 +1,4 @@
 prettytable==3.10.0
-wolfsoftware.notify==0.1.0
+wolfsoftware.notify==0.1.2
 wolfsoftware.get_aws_regions==0.1.2
 yaspin==3.0.2
